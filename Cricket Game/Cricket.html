@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <style> 
+    body{
+      text-align: center;
+    }
+    .buttons{
+      display: inline-block;
+      margin: 10px;
+      text-decoration: dashed;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button class="buttons" onclick="
+  console.log('You have choose  Bat');
+ let randomNumber=Math.random() * 3;
+
+ //console.log(randomNumber);
+ let computerChoice;
+ if(randomNumber>0 && randomNumber<=1){
+  computerChoice='Bat';
+ }
+ else if (randomNumber>1 && randomNumber<=2){
+  computerChoice='Ball';
+ }
+ else{
+  computerChoice='Stump';
+ }
+ console.log(`Computer Choosen to ${computerChoice}`)
+
+ let result;
+ if(computerChoice==='Bat'){
+  result='Match Tie';
+ }
+ else if(computerChoice==='Ball'){
+  result='User wins';
+ }
+ else if(computerChoice==='Stump'){
+  result='Computer Wins';
+ }
+
+ alert(`You have Choosen Bat .Compter Choosen to ${computerChoice} and ${result}`);
+  
+  "
+  >Bat</button>
+
+  <button class="buttons"  onclick="
+  console.log('You have choose  Ball');
+ let randomNumber1=Math.random() * 3;
+
+ //console.log(randomNumber);
+ let computerChoice1;
+ if(randomNumber1>0 && randomNumber1<=1){
+  computerChoice1='Bat';
+ }
+ else if (randomNumber1>1 && randomNumber1<=2){
+  computerChoice1='Ball';
+ }
+ else{
+  computerChoice1='Stump';
+ }
+ console.log(`Computer Choosen to ${computerChoice1}`);
+
+ let result1;
+ if(computerChoice1==='Bat'){
+  result1='Computer Wins ';
+ }
+ else if(computerChoice1==='Ball'){
+  result1='It`s a tie';
+ }
+ else if(computerChoice1==='Stump'){
+  result1='You Win';
+ }
+
+ alert(`You have Choosen Ball .Compter Choosen to ${computerChoice1} and ${result1}`);
+  
+  "
+  >Ball</button>
+
+  <button class="buttons"  onclick="
+  console.log('You have Choose  Stump');
+ let randomNumber2=Math.random() * 3;
+
+ //console.log(randomNumber);
+ let computerChoice2;
+ if(randomNumber2>0 && randomNumber2<=1){
+  computerChoice2='Bat';
+ }
+ else if (randomNumber2>1 && randomNumber2<=2){
+  computerChoice2='Ball';
+ }
+ else{
+  computerChoice2='Stump';
+ }
+ console.log(`Computer Choosen to ${computerChoice2}`)
+
+ let result2;
+ if(computerChoice2==='Bat'){
+  result2='You Wins';
+ }
+ else if(computerChoice2==='Ball'){
+  result2='Computer Wins';
+ }
+ else if(computerChoice2==='Stump'){
+  result2='It`s a Tie';
+ }
+
+ alert(`You have Choosen Stump . Compter Choosen to ${computerChoice2} and ${result2}`);
+  
+  "
+  
+  >Stump</button>
+  
+</body>
+</html>
